@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  
+  background-color: rgb(209, 126, 126);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-family: "Libre Baskerville", serif;
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 90px; */
+}
+.nav-list li {
+  list-style: none;
+  padding: 30px 30px;
+  font-size: 1.5rem;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-list li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav-list .logo img {
+  width: 13%;
+}
+
+.nav-list .logo img:hover {
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 320px;
+}
+
+.main h1 {
+  font-size: 4rem;
+  font-family: 'Sirin Stencil', sans-serif;
+  background: -webkit-linear-gradient(#196d88, #eb2362);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+
+#spn {
+  background: -webkit-linear-gradient(#a2a0a0, #2f1818);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 2px 2px rgb(182 45 99);
+  font-family: "Libre Baskerville", serif;
+}
+
+.main p {
+  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
+  text-shadow: 2px 2px  #ffc1d5;
+  padding-top: 14px;
+}
+#home {
+  background-image: url(./images/2106.q702.022.S.m005.c10.art\ gallery\ artist.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+}
+#home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.942);
+  opacity: 0.7;
+  z-index: -2;
+}
+#works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.works-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: "Libre Baskerville", serif;
+}
+
+.workbox {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.work-item {
+  flex: 1;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+  margin: 20px 20px;
+  padding: 40px;
+  font-family: "Source Serif 4", serif;
+}
+.work-item img {
+  width: 100%;
+  height: auto;
+}
+.btn {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 15px;
+  font-size: 20px;
+  background-color: rgb(216, 136, 136);
+  margin-top: 12px;
+  margin-bottom: 25px;
+  font-family: "Source Serif 4", serif;
+}
+.btn:hover {
+  color: white;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+.btn a {
+  text-decoration: none;
+  color: black;
+}
+#about{
+  margin-top: 20px;
+}
+#about h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  height: 30%;
+  font-family: "Libre Baskerville", serif;
+  margin-top: 20px;
+}
+#about a {
+  text-decoration: none;
+  color: rgb(180, 95, 120);
+}
+.menu{
+ position: absolute;
+ cursor: pointer;
+ right: 5%;
+ top: 15px;
+ display: none;
+}
+.line{
+  background-color: white;
+  width: 25px;
+  height: 4px;
+  margin: 5px 3px;
+}
+
+.footer{
+ 
+  margin-top: 30px;
+}
+.footer .foot-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .foot-list li{
+  text-decoration: none;
+  list-style: none;
+padding: 30px 30px;
+font-size: 0.8rem;
+
+}
+.footer .foot-list li a{
+  text-decoration: none;
+  color: black;
+  font-family: "Source Serif 4", serif;
+ 
+}
+.footer p{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:730px){
+.nav-list{
+  flex-direction: column;
+}
+.menu{
+  display: block;
+}
+.hnav{
+  height: 70px;
+}
+.vnav{
+  opacity: 0;
+}
+.navbar{
+
+  transition: all 0.5s ease-out;
+}
+.main{
+  padding-top: 215px;
+
+}
+}
